@@ -1,0 +1,23 @@
+body, html, * {
+  margin: 0;
+  box-sizing: border-box;
+}
+#app {
+  height: 100vh;
+  .navbar {
+    height: 80px;
+    background-color: aqua;
+  }
+  .page {
+    display: flex;
+    height: 100%;
+    .products {
+      width: 75%;
+      background-color: burlywood;
+    }
+    .basket {
+      width: 25%;
+      background-color: darksalmon;
+    }
+  }
+}
