@@ -2,22 +2,73 @@ body, html, * {
   margin: 0;
   box-sizing: border-box;
 }
-#app {
+.navbar {
+  height: 80px;
+  background-color: aqua;
+}
+.page {
+  display: flex;
+  justify-content: flex-end;
+  height: 100%;
+}
+
+
+/***********************/
+/*  products section   */
+/***********************/
+
+.products {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 50%;
+  padding: 64px 0 0;
+  margin-right: 32px;
+  margin-bottom: 128px;
+  gap: 32px;
+}
+.product-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.product-card img {
+  width: 100%;
+  height: 85%;
+  object-fit: cover;
+}
+.product-card .price {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #f5bc68;
+  color: white;
+  padding: 10px 8px;
+}
+.product-card .buttons {
+  height: 15%;
+  display: flex;
+}
+.product-card .like-button,
+.product-card .cart-button {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+.product-card .like-button {
+  background-color: #feaeae;
+}
+.product-card .cart-button {
+  background-color: #afe8f3;
+}
+
+
+.basket {
+  width: 25%;
+  background-color: darksalmon;
   height: 100vh;
-  .navbar {
-    height: 80px;
-    background-color: aqua;
-  }
-  .page {
-    display: flex;
-    height: 100%;
-    .products {
-      width: 75%;
-      background-color: burlywood;
-    }
-    .basket {
-      width: 25%;
-      background-color: darksalmon;
-    }
-  }
+  position: sticky;
+  top: 0;
 }
